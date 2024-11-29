@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="350dp"
+        android:layout_height="130dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        app:cardBackgroundColor="#171E56A0"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/imageViewPostManagement"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvPostManagementTitle"
+            style="@style/TextAppearance.MaterialComponents.Headline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:text="Master Room"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageViewPostManagement"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvPostManagementPostTime"
+            style="@style/TextAppearance.MaterialComponents.Subtitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:text="You posted at"
+            android:textSize="10sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@+id/imageViewPostManagement"
+            app:layout_constraintTop_toBottomOf="@id/tvPostManagementTitle" />
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/imageButtonEdit"-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_marginTop="12dp"-->
+<!--            android:background="#171E56A0"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/imageButtonDelete"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/tvPostManagementPostTime"-->
+<!--            app:srcCompat="@drawable/baseline_edit_24" />-->
+
+        <ImageButton
+            android:id="@+id/imageButtonDelete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:background="#171E56A0"
+            app:layout_constraintStart_toEndOf="@+id/imageViewPostManagement"
+            app:layout_constraintTop_toBottomOf="@+id/tvPostManagementPostTime"
+            app:srcCompat="@drawable/baseline_delete_24" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

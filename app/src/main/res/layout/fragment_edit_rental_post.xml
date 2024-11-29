@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout19"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditRentalPostFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvEditPostRentalLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="88dp"
+            android:text="Location"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinnerEditLocation"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEditPostRentalLocation" />
+
+        <TextView
+            android:id="@+id/tvEditPostRentalRoomType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="28dp"
+            android:text="Room Type"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerEditLocation" />
+
+        <Spinner
+            android:id="@+id/spinnerEditRoomType1"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEditPostRentalRoomType" />
+
+        <Spinner
+            android:id="@+id/spinnerEditRoomType2"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.471"
+            app:layout_constraintStart_toEndOf="@+id/spinnerEditRoomType1"
+            app:layout_constraintTop_toBottomOf="@+id/tvEditPostRentalRoomType" />
+
+        <TextView
+            android:id="@+id/tvEditPostRentalContactNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="24dp"
+            android:text="Contact Number"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerEditRoomType1" />
+
+        <EditText
+            android:id="@+id/tfEditPostRentalContactNum"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEditPostRentalContactNum" />
+
+        <TextView
+            android:id="@+id/tvEditPostRentalMonthlyRental"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="32dp"
+            android:text="Monthly Rental (RM)"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tfEditPostRentalContactNum" />
+
+        <TextView
+            android:id="@+id/tvEditPostRentalMaxPerson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Max Person"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.262"
+            app:layout_constraintStart_toEndOf="@+id/tvEditPostRentalMonthlyRental"
+            app:layout_constraintTop_toBottomOf="@+id/tfEditPostRentalContactNum" />
+
+        <EditText
+            android:id="@+id/tfEditPostRentalMonthRental"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEditPostRentalMonthlyRental" />
+
+        <EditText
+            android:id="@+id/tfEditPostRentalMaxPerson"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.46"
+            app:layout_constraintStart_toEndOf="@+id/tfEditPostRentalMonthRental"
+            app:layout_constraintTop_toBottomOf="@+id/tvEditPostRentalMaxPerson" />
+
+        <TextView
+            android:id="@+id/tvEditPostRentalAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="24dp"
+            android:text="Address"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tfEditPostRentalMonthRental" />
+
+        <EditText
+            android:id="@+id/tfEditPostRentalAddress"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.483"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEditPostRentalAddress" />
+
+        <TextView
+            android:id="@+id/tvEditPostRental2Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="28dp"
+            android:text="Title"
+            android:textSize="16sp"
+
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tfEditPostRentalAddress" />
+
+        <EditText
+            android:id="@+id/tfEditPostRental2TitleValue"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.413"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEditPostRental2Title" />
+
+        <TextView
+            android:id="@+id/tvEditPostRentalPreference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="20dp"
+            android:text="Preference"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tfEditPostRental2TitleValue" />
+
+        <TextView
+            android:id="@+id/tvEditPostRental2Status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="16dp"
+            android:text="Status"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEditPostRentalPreference" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupEditStatus"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.379"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEditPostRental2Status">
+
+            <RadioButton
+                android:id="@+id/rdEditCouple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Couple" />
+
+            <RadioButton
+                android:id="@+id/rdEditMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/rdEditFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Female" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvEditPostRental2Race"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="16dp"
+            android:text="Race"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupEditStatus" />
+
+        <TextView
+            android:id="@+id/tvEditPostRental2LeaseTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="8dp"
+            android:text="Lease Term"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupEditRace" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupEditLeaseTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEditPostRental2LeaseTerm">
+
+            <RadioButton
+                android:id="@+id/rbEditPostRental2Lessthan6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Below 6 Months" />
+
+            <RadioButton
+                android:id="@+id/rbEditPostRental26Month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="6 Months" />
+
+            <RadioButton
+                android:id="@+id/rbEditPostRental2Morethan12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="12 Months and above" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroupEditRace"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.372"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEditPostRental2Race">
+
+            <RadioButton
+                android:id="@+id/rbEditPostRental2Malay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Malay" />
+
+            <RadioButton
+                android:id="@+id/rbEditPostRental2Chinese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Chinese" />
+
+            <RadioButton
+                android:id="@+id/rbEditPostRental2Indian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Indian" />
+
+            <RadioButton
+                android:id="@+id/rbEditPostRental2OtherRace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Others" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvEditPostRental3Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="20dp"
+            android:text="Amenities and Utilities Details"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupEditLeaseTerm" />
+
+        <GridLayout
+            android:id="@+id/gridLayoutEdit"
+            android:layout_width="331dp"
+            android:layout_height="326dp"
+            android:layout_marginTop="24dp"
+            android:columnCount="2"
+            android:rowCount="7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEditPostRental3Title">
+
+            <CheckBox
+                android:id="@+id/cbEditNearLRT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Near LRT" />
+
+            <CheckBox
+                android:id="@+id/cbEditNearBusStation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Near Bus Station" />
+
+            <CheckBox
+                android:id="@+id/cbEditNearKTM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Near KTM" />
+
+            <CheckBox
+                android:id="@+id/cbEditNearMRT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Near MRT" />
+
+            <CheckBox
+                android:id="@+id/cbEdit24hourssecurity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24 hours security" />
+
+            <CheckBox
+                android:id="@+id/cbEditSportFacilities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sport Facilities" />
+
+            <CheckBox
+                android:id="@+id/cbEditCoveredCarPark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Covered Car Park" />
+
+            <CheckBox
+                android:id="@+id/cbEditNearRestaurant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Near Restaurant" />
+
+            <CheckBox
+                android:id="@+id/cbEditWiFi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WiFi" />
+
+            <CheckBox
+                android:id="@+id/cbEditMiniMarket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mini Market" />
+
+            <CheckBox
+                android:id="@+id/cbEditIncludeUtilitiesFees"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Include Utilities Fees" />
+
+            <CheckBox
+                android:id="@+id/cbEditAirConditionerWithMeter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Air Con With Meter" />
+
+            <CheckBox
+                android:id="@+id/cbEditIncludeAirConditionerFee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Include Air Con Fee" />
+
+            <CheckBox
+                android:id="@+id/cbEditPrivateBathroom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Private Bathroom" />
+
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/tvEditPostRental4Desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="12dp"
+            android:text="Description"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gridLayoutEdit" />
+
+        <EditText
+            android:id="@+id/editTextTextEditMultiLineDesc"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEditPostRental4Desc" />
+
+        <TextView
+            android:id="@+id/tvEditPostRental4Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="36dp"
+            android:text="Image"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextEditMultiLineDesc" />
+
+        <TextView
+            android:id="@+id/tvEditImageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="24dp"
+            android:text="Please upload image(s)"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEditPostRental4Image" />
+
+        <Button
+            android:id="@+id/btnEditPostRentalUploadImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="8dp"
+            android:text="Upload"
+            android:backgroundTint="@color/blue"
+            app:layout_constraintStart_toEndOf="@+id/tvEditImageTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvEditPostRental4Image" />
+
+        <Button
+            android:id="@+id/btnEditPostRental4Submit"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="Submit"
+            android:backgroundTint="@color/blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewEditUpload" />
+
+        <ImageView
+            android:id="@+id/imageViewEditUpload"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/baseline_image_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEditImageTitle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

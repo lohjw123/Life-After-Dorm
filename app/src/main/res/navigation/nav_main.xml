@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.lifeafterdorm.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_aboutUsFragment"
+            app:destination="@id/aboutUsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_favouriteListFragment"
+            app:destination="@id/favouriteListFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment4"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.example.lifeafterdorm.AboutUsFragment"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/favouriteListFragment"
+        android:name="com.example.lifeafterdorm.FavouriteListFragment"
+        android:label="fragment_favourite_list"
+        tools:layout="@layout/fragment_favourite_list" >
+        <action
+            android:id="@+id/action_favouriteListFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_favouriteListFragment_to_favouriteListDetailsFragment"
+            app:destination="@id/favouriteListDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favouriteListDetailsFragment"
+        android:name="com.example.lifeafterdorm.FavouriteListDetailsFragment"
+        android:label="fragment_favourite_list_details"
+        tools:layout="@layout/fragment_favourite_list_details" />
+    <fragment
+        android:id="@+id/helpSupportFragment"
+        android:name="com.example.lifeafterdorm.HelpSupportFragment"
+        android:label="fragment_help_support"
+        tools:layout="@layout/fragment_help_support" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.lifeafterdorm.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_recoverPasswordFragment"
+            app:destination="@id/recoverPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recoverPasswordFragment"
+        android:name="com.example.lifeafterdorm.RecoverPasswordFragment"
+        android:label="fragment_recover_password"
+        tools:layout="@layout/fragment_recover_password" >
+        <action
+            android:id="@+id/action_recoverPasswordFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+</navigation>

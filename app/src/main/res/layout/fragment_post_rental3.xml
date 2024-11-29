@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout16"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostRental3Fragment">
+
+    <TextView
+        android:id="@+id/tvPostRental3Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="80dp"
+        android:text="Amenities and Utilities Details"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="331dp"
+        android:layout_height="326dp"
+        android:layout_marginTop="24dp"
+        android:columnCount="2"
+        android:rowCount="7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPostRental3Title">
+
+        <CheckBox
+            android:id="@+id/cbNearLRT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Near LRT" />
+
+        <CheckBox
+            android:id="@+id/cbNearBusStation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Near Bus Station" />
+
+        <CheckBox
+            android:id="@+id/cbNearKTM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Near KTM" />
+
+        <CheckBox
+            android:id="@+id/cbNearMRT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Near MRT" />
+
+        <CheckBox
+            android:id="@+id/cb24hourssecurity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24 hours security" />
+
+        <CheckBox
+            android:id="@+id/cbSportFacilities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sport Facilities" />
+
+        <CheckBox
+            android:id="@+id/cbCoveredCarPark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Covered Car Park" />
+
+        <CheckBox
+            android:id="@+id/cbNearRestaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Near Restaurant" />
+
+        <CheckBox
+            android:id="@+id/cbWiFi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WiFi" />
+
+        <CheckBox
+            android:id="@+id/cbMiniMarket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mini Market" />
+
+        <CheckBox
+            android:id="@+id/cbIncludeUtilitiesFees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Include Utilities Fees" />
+
+        <CheckBox
+            android:id="@+id/cbAirConditionerWithMeter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Air Con With Meter" />
+
+        <CheckBox
+            android:id="@+id/cbIncludeAirConditionerFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Include Air Con Fee" />
+
+        <CheckBox
+            android:id="@+id/cbPrivateBathroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Private Bathroom" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btnPostRental3Next"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Next"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

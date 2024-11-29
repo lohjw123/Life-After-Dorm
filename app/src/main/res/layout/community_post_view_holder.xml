@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="8dp"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/idLLCommunityPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <!--circle image for displaying the user image-->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/idCVCommunityPost"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <!--text view for displaying user name-->
+                <TextView
+                    android:id="@+id/idTVCommunityPostName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:padding="3dp"
+                    android:text="geeks_for_geeks"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <!--textview for displaying post publish time-->
+                <TextView
+                    android:id="@+id/idTVCommunityPostTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="time"
+                    android:textColor="@color/black"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!--text view for displaying post description-->
+        <TextView
+            android:id="@+id/idTVCommunityPostDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idLLCommunityPost"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:text="Description"
+            android:textColor="@color/black"
+            android:textSize="11sp" />
+
+        <!--image view to display the post image-->
+        <ImageView
+            android:id="@+id/idIVPost"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/idTVCommunityPostDescription"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+
+        <!--linear layout for displaying facebook actions-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idIVPost"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/linearLayoutCommunityPostContactWhatsapp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/whatsapp" />
+
+                <TextView
+                    android:id="@+id/idTVLikes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:drawablePadding="3dp"
+                    android:padding="5dp"
+                    android:text="Contact in Whatsapp"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
